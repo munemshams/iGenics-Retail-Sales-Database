@@ -8,4 +8,4 @@ In this project, I built a complete end-to-end ETL and analytics pipeline by tra
 
 -Developed clear, year-segmented dashboards using matplotlib, highlighting net income of $188,184 in 2024 and $169,276 in 2025 (Jan-Jul) and enabling direct comparison of profitability trends to guide data-driven decision-making
 
--Did not include the original datasets due to concerns related to leaking proprietary data but included the cleaned and scaled dataset for demonstration purposes
+-Did not include the original datasets for concerns related to leaking proprietary data but included the cleaned and scaled dataset for demonstration purposes
