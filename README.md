@@ -1,6 +1,6 @@
 **Project Overview**
 
-This project implements a complete end-to-end ETL and analytics pipeline for iGenics, a U.S.-manufactured, GMP-certified health supplement.
+This project implements a complete end-to-end ETL and analytics pipeline for iGenics, a U.S manufactured, GMP-certified health supplement.
 Using Python and MySQL, the workflow ingests 83 weeks of raw weekly sales data, cleans and standardizes it, loads it into a relational database, and produces SQL-driven financial analytics and visual dashboards.
 
 The pipeline demonstrates real-world skills in:
