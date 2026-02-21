@@ -5,15 +5,15 @@ Using Python and MySQL, the workflow ingests 83 weeks of raw weekly sales data, 
 
 The pipeline demonstrates real-world skills in:
 
-Data engineering (ETL pipelines, automation)
+- Data engineering (ETL pipelines, automation)
 
-SQL analytics (MySQL queries, exports)
+- SQL analytics (MySQL queries, exports)
 
-Python development (pandas, numpy, regex, SQLAlchemy)
+- Python development (pandas, numpy, regex, SQLAlchemy)
 
-Data visualization (matplotlib)
+- Data visualization (matplotlib)
 
-Business performance analysis
+- Business performance analysis
 
 **Data Privacy Notice**
 
@@ -22,15 +22,15 @@ A cleaned dataset sample and complete pipeline logic are provided for demonstrat
 
 **Files Included**
 
-README.md → Project documentation
+- README.md → Project documentation
 
-etl_weekly_summary_to_mysql.py → Raw python script used to create Python based ETL Pipeline and SQL Database
+- etl_weekly_summary_to_mysql.py → Raw python script used to create Python based ETL Pipeline and SQL Database
 
-SQL Queries → Raw SQL Queries compiled together
+- SQL Queries → Raw SQL Queries compiled together
 
-project_summary.txt → output summary file rendered from python script
+- project_summary.txt → output summary file rendered from python script
 
-5 CSV output files :
+- 5 CSV output files :
 
 -Total revenue per year
 
@@ -40,9 +40,9 @@ project_summary.txt → output summary file rendered from python script
 
 -Average weekly revenue per year
 
--Weekly revenue trend (for visualization)
+-Weekly revenue trend
 
-4 png output files:
+- 4 png output files:
 
 -Weekly net income 2024
 
@@ -59,29 +59,29 @@ project_summary.txt → output summary file rendered from python script
 
 The ETL system:
 
--Reads and validates all raw CSV sales files
+- Reads and validates all raw CSV sales files
 
--Standardizes currency values and numeric formats
+- Standardizes currency values and numeric formats
 
--Parses week and year from labels like “Week 01, 2024”
+- Parses week and year from labels like “Week 01, 2024”
 
--Removes formatting inconsistencies and wide-format columns
+- Removes formatting inconsistencies and wide-format columns
 
--Transforms weekly summaries into long-format analytical tables
+- Transforms weekly summaries into long-format analytical tables
 
--Saves a cleaned dataset for reproducibility
+- Saves a cleaned dataset for reproducibility
 
 **Database Integration (MySQL)**
 
--During execution, the script automatically creates a MySQL database (if not present)
+- During execution, the script automatically creates a MySQL database (if not present)
 
--It Loads:
+- It Loads:
 
 1. weekly_summary_raw — raw ingested data
 
 2. weekly_metrics_clean — normalized long-format dataset
 
--Executes SQL analytics queries through SQLAlchemy
+- Executes SQL analytics queries through SQLAlchemy
 
 **SQL Analytics Performed**
 
@@ -99,7 +99,7 @@ The ETL system:
 
 **Visual Dashboards**
 
--Using matplotlib, the pipeline generates:
+- Using matplotlib, the pipeline generates:
 
 1. Annual revenue charts
 
@@ -108,15 +108,15 @@ The ETL system:
 
 **Key Outcomes**
 
--Automated ingestion, cleaning, and transformation of 83 weeks of sales data
+- Automated ingestion, cleaning, and transformation of 83 weeks of sales data
 
--Loaded all processed data into a structured MySQL database
+- Loaded all processed data into a structured MySQL database
 
--Produced 5 SQL-based analytics reports
+- Produced 5 SQL-based analytics reports
 
--Generated year-segmented visual dashboards for clear performance comparison
+- Generated year-segmented visual dashboards for clear performance comparison
 
--Derived business insights:
+- Derived business insights:
 
 1. Revenue (2024): $854,969
 
