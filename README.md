@@ -55,75 +55,73 @@ project_summary.txt → output summary file rendered from python script
 
 **Pipeline Capabilities**
 
-🔹 ETL Processing (Python)
+**ETL Processing (Python)**
 
 The ETL system:
 
-Reads and validates all raw CSV sales files
+-Reads and validates all raw CSV sales files
 
-Standardizes currency values and numeric formats
+-Standardizes currency values and numeric formats
 
-Parses week and year from labels like “Week 01, 2024”
+-Parses week and year from labels like “Week 01, 2024”
 
-Removes formatting inconsistencies and wide-format columns
+-Removes formatting inconsistencies and wide-format columns
 
-Transforms weekly summaries into long-format analytical tables
+-Transforms weekly summaries into long-format analytical tables
 
-Saves a cleaned dataset for reproducibility
+-Saves a cleaned dataset for reproducibility
 
-🔹 Database Integration (MySQL)
+**Database Integration (MySQL)**
 
-During execution, the script automatically:
+-During execution, the script automatically creates a MySQL database (if not present)
 
-Creates a MySQL database (if not present)
+-It Loads:
 
-Loads:
+1. weekly_summary_raw — raw ingested data
 
-weekly_summary_raw — raw ingested data
+2. weekly_metrics_clean — normalized long-format dataset
 
-weekly_metrics_clean — normalized long-format dataset
+-Executes SQL analytics queries through SQLAlchemy
 
-Executes SQL analytics queries through SQLAlchemy
+**SQL Analytics Performed**
 
-🔹 SQL Analytics Performed
+-After loading data into MySQL, the pipeline executes several analytics queries and exports them as CSV reports:
 
-After loading data into MySQL, the pipeline executes several analytics queries and exports them as CSV reports:
+1. Total revenue per year
 
-Total revenue per year
+2. Total net income per year
 
-Total net income per year
+3. Most profitable week
 
-Most profitable week
+4. Average weekly revenue per year
 
-Average weekly revenue per year
+5. Weekly revenue trend (for visualization)
 
-Weekly revenue trend (for visualization)
+**Visual Dashboards**
 
-🔹 Visual Dashboards
+-Using matplotlib, the pipeline generates:
 
-Using matplotlib, the pipeline generates:
+1. Annual revenue charts
 
-Annual revenue charts
-
-Annual net income charts
+2. Annual net income charts
 
 
 **Key Outcomes**
 
-Automated ingestion, cleaning, and transformation of 83 weeks of sales data
+-Automated ingestion, cleaning, and transformation of 83 weeks of sales data
 
-Loaded all processed data into a structured MySQL database
+-Loaded all processed data into a structured MySQL database
 
-Produced 5 SQL-based analytics reports
+-Produced 5 SQL-based analytics reports
 
-Generated year-segmented visual dashboards for clear performance comparison
+-Generated year-segmented visual dashboards for clear performance comparison
 
-Derived business insights:
+-Derived business insights:
 
-Revenue (2024): $854,969
+1. Revenue (2024): $854,969
 
-Revenue (Jan–Jul 2025): $775,592
+2. Revenue (Jan–Jul 2025): $775,592
 
-Net Income (2024): $188,184
+3. Net Income (2024): $188,184
 
-Net Income (2025 Jan–Jul): $169,276
+4. Net Income (2025 Jan–Jul): $169,276
