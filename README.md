@@ -45,8 +45,7 @@ This allows the full analytics workflow to be understood without exposing sensit
 | `SQL Queries.sql` | Collection of SQL queries used to generate financial analytics from the database |
 | `project_summary.txt` | Automatically generated summary file containing pipeline execution metrics and results |
 | `outputs/` | Folder containing generated analytics reports and visualizations |
-| `outputs/*.csv` | SQL analytics exports including revenue summaries and weekly metrics |
-| `outputs/*.png` | Visual dashboards showing revenue and net income trends |
+
 
 ---
 
