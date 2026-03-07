@@ -211,19 +211,4 @@ These metrics provide a clear overview of the product’s financial performance 
 
 ---
 
-# Technologies Used
 
-Python  
-MySQL  
-SQLAlchemy  
-Pandas  
-NumPy  
-Matplotlib  
-
----
-
-# Author
-
-**Munem Shariar Shams**
-
-Data Analytics | Data Engineering | SQL | Python
